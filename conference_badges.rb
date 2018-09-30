@@ -16,10 +16,12 @@ def assign_rooms(array)
 end
 
 def printer(attendees)
+  array = []
   attendees.each { |n| 
-    batch_badge_creator(n)
+    array << n
+    batch_badge_creator(array)
       name_list.each { |n| puts n }
-    assign_rooms(n)
+    assign_rooms(array)
       list.each { |n| puts n }
   }
 end
