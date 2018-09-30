@@ -19,7 +19,7 @@ def printer(attendees)
   array = []
   array << attendees
   batch_badge_creator(array)
-  @list.each do |n|
+  @name_list.each do |n|
     puts n
   end
     
