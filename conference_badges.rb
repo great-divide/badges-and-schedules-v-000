@@ -12,5 +12,5 @@ def assign_rooms(array)
   array.each_with_index { |n, index|
   list << "Hello, #{n}! You'll be assigned to room #{index}!"
   }
- list
+ return list
 end
