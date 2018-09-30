@@ -21,7 +21,7 @@ def printer(attendees)
     puts n
   end
   assign_rooms(attendees)
-  puts @list.each
+  puts @list
   end
     
 end
