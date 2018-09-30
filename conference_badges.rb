@@ -8,11 +8,11 @@ def batch_badge_creator(array)
 end
 
 def assign_rooms(array)
-  list = []
+  @list = []
   array.each_with_index { |n, index|
-  list << "Hello, #{n}! You'll be assigned to room #{index+1}!"
+  @list << "Hello, #{n}! You'll be assigned to room #{index+1}!"
   }
- return list
+ return @list
 end
 
 def printer(attendees)
@@ -22,6 +22,6 @@ def printer(attendees)
     batch_badge_creator(array)
       @name_list.each { |n| puts n }
     assign_rooms(array)
-      list.each { |n| puts n }
+      @list.each { |n| puts n }
   }
 end
