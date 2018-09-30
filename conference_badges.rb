@@ -17,8 +17,9 @@ end
 
 def printer(attendees)
   attendees.each { |n| 
-    puts batch_badge_creator(n)
+    batch_badge_creator(n)
+      name_list.each { |n| puts n }
     assign_rooms(n)
-    puts list
+      list.each { |n| puts n }
   }
 end
