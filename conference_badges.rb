@@ -4,16 +4,18 @@ def badge_maker(name)
 end
 
 def batch_badge_creator(array)
-  array.map! { |n| badge_maker(n) }
+  @name_list = array.map! { |n| badge_maker(n) }
 end
 
 def assign_rooms(array)
-  list = []
+  @list = []
   array.each_with_index { |n, index|
-  list << "Hello, #{n}! You'll be assigned to room #{index+1}!"
+  @list << "Hello, #{n}! You'll be assigned to room #{index+1}!"
   }
- return list
+ return @list
 end
 
 def printer
-  
+  puts @name_list
+  puts @list
+end
