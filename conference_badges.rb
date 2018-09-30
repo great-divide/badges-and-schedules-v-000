@@ -25,6 +25,8 @@ def printer(attendees)
   room_array = []
   room_array << attendees
   assign_rooms(room_array)
-    puts @list.each
+    @list.each do |x|
+      puts x
+    end
     
 end
