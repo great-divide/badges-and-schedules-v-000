@@ -20,8 +20,8 @@ def printer(attendees)
   attendees.each { |n| 
     array << n
     batch_badge_creator(array)
-    assign_rooms(array) 
     }
-    puts @name_list
-    puts @list
+    @name_list.each { |n| 
+      puts n }
+    
 end
