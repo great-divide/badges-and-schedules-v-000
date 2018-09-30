@@ -4,7 +4,7 @@ def badge_maker(name)
 end
 
 def batch_badge_creator(array)
-  @name_list = array.map! { |n| badge_maker(n) }
+  @name_list = array.map { |n| badge_maker(n) }
 end
 
 def assign_rooms(array)
@@ -16,15 +16,13 @@ def assign_rooms(array)
 end
 
 def printer(attendees)
-  badge_array = []
-  badge_array << attendees
-  batch_badge_creator(badge_array)
+
+  batch_badge_creator(attendees)
   @name_list.each do |n|
     puts n
   end
-  room_array = []
-  room_array << attendees
-  assign_rooms(room_array)
+  
+  assign_rooms(attendees)
     @list.each do |x|
       puts x
     end
